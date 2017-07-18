@@ -34,7 +34,14 @@
                     <br>
                     <div class='input'>
                         <div class='step'>1</div>
-                        <input type='text' name='zip' placeholder='Does not have to be where you live'>
+                        <input  type='text'
+                                id='zip'
+                                name='zip'
+                                placeholder='Does not have to be where you live'
+                                onkeyup="showDrowpDownZip()">
+                        <div class='drop-location' id='result-location'>
+                            
+                        </div>
                     </div>
 
                     <br>
@@ -42,12 +49,15 @@
                     <br>
                     <div class='input'>
                         <div class='step'>2</div>
-                        <select name='category' placeholder='Click to choose a legal category'>
-                          <option value="" disabled selected>Click to choose a legal category</option>
-                          <option value="volvo">Volvo</option>
+                        <select 
+                            name='category'
+                            id='category'
+                            onchange="changeFunc( value )">
+                          <!-- <option value="" disabled selected>Click to choose a legal category</option>
+                          <option value="family">Family</option>
                           <option value="saab">Saab</option>
                           <option value="mercedes">Mercedes</option>
-                          <option value="audi">Audi</option>
+                          <option value="audi">Audi</option> -->
                         </select>
                     </div>
                     <div class='click-cat'>Can't find your category? Click here.</div>
@@ -55,9 +65,81 @@
                 <div class='reviews'>
                     <div class='title'>Clients review LegalMatch lawyers</div>
                     <div class='review-list'>
-                        <div class='item'></div>
-                        <div class='item'></div>
-                        <div class='item'></div>
+                        <div class='item'>
+                            <div class='profile'>
+                                <div class='image'>
+                                    <img src="resources/photos/mitchell.png">
+                                </div>
+                                <div class='name'>Mitchell M.</div>
+                                <div class='location'>Cherry Hill, NJ</div>
+                            </div>
+                            <div class='comment'>
+                                <div class='law'>Family Law</div>
+                                <div class='stars'>
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                </div>
+                                <br><br>
+                                <div class='content'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis erat sem, id congue magna pretium id. Sed et dolor libero. Nullam malesuada est id fringilla fermentum. Vivamus vel dolor pellentesque, volutpat nunc at, pellentesque massa. Donec bibendum ipsum et ligula accumsan accumsan. Cras consequat lorem dolor, at mollis mauris vulputate nec. Etiam tincidunt bibendum eros, at auctor erat scelerisque scelerisque. In eu leo felis. Vivamus vitae viverra quam. Sed ornare sit amet leo sit amet malesuada. Donec in interdum nunc, eget volutpat massa. Cras in convallis libero. Etiam vitae diam mauris. Mauris ut ex felis. Vestibulum finibus velit massa, ut hendrerit enim euismod sit amet. Aenean scelerisque odio ut elementum commodo. Sed non efficitur orci. Fusce fermentum, dolor eget ornare viverra, ipsum risus venenatis tellus, nec finibus mi quam a arcu. Sed placerat ut dolor nec molestie. Duis vulputate dictum aliquam. Nullam ut augue vel nulla interdum pellentesque a at enim. Etiam id ornare dui, et egestas tellus. Ut pellentesque enim vel bibendum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vulputate facilisis mattis. Aenean accumsan, tellus molestie tincidunt consectetur, nibh nisl feugiat nisi, et faucibus ante nisi eu mauris. Vestibulum nisl mi, scelerisque a ultrices nec, vehicula eget libero. Quisque blandit dignissim augue a porttitor."</div>
+                                <div class='readmore'>
+                                    Read Review
+                                    <img src="resources/images/read.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <div class='profile'>
+                                <div class='image'>
+                                    <img src="resources/photos/joel.png">
+                                </div>
+                                <div class='name'>Joel C.</div>
+                                <div class='location'>Little Rock, AK</div>
+                            </div>
+                            <div class='comment'>
+                                <div class='law'>Job & Employment Law</div>
+                                <div class='stars'>
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                </div>
+                                <br><br>
+                                <div class='content'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis erat sem, id congue magna pretium id. Sed et dolor libero. Nullam malesuada est id fringilla fermentum. Vivamus vel dolor pellentesque, volutpat nunc at, pellentesque massa. Donec bibendum ipsum et ligula accumsan accumsan. Cras consequat lorem dolor, at mollis mauris vulputate nec. Etiam tincidunt bibendum eros, at auctor erat scelerisque scelerisque. In eu leo felis. Vivamus vitae viverra quam. Sed ornare sit amet leo sit amet malesuada. Donec in interdum nunc, eget volutpat massa. Cras in convallis libero. Etiam vitae diam mauris. Mauris ut ex felis. Vestibulum finibus velit massa, ut hendrerit enim euismod sit amet. Aenean scelerisque odio ut elementum commodo. Sed non efficitur orci. Fusce fermentum, dolor eget ornare viverra, ipsum risus venenatis tellus, nec finibus mi quam a arcu. Sed placerat ut dolor nec molestie. Duis vulputate dictum aliquam. Nullam ut augue vel nulla interdum pellentesque a at enim. Etiam id ornare dui, et egestas tellus. Ut pellentesque enim vel bibendum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vulputate facilisis mattis. Aenean accumsan, tellus molestie tincidunt consectetur, nibh nisl feugiat nisi, et faucibus ante nisi eu mauris. Vestibulum nisl mi, scelerisque a ultrices nec, vehicula eget libero. Quisque blandit dignissim augue a porttitor."</div>
+                                <div class='readmore'>
+                                    Read Review
+                                    <img src="resources/images/read.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <div class='profile'>
+                                <div class='image'>
+                                    <img src="resources/photos/brigida.png">
+                                </div>
+                                <div class='name'>Brigida R.</div>
+                                <div class='location'>Dallas,</div>
+                            </div>
+                            <div class='comment'>
+                                <div class='law'>Family Law</div>
+                                <div class='stars'>
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                    <img src="resources/images/star.png">
+                                </div>
+                                <br><br>
+                                <div class='content'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis erat sem, id congue magna pretium id. Sed et dolor libero. Nullam malesuada est id fringilla fermentum. Vivamus vel dolor pellentesque, volutpat nunc at, pellentesque massa. Donec bibendum ipsum et ligula accumsan accumsan. Cras consequat lorem dolor, at mollis mauris vulputate nec. Etiam tincidunt bibendum eros, at auctor erat scelerisque scelerisque. In eu leo felis. Vivamus vitae viverra quam. Sed ornare sit amet leo sit amet malesuada. Donec in interdum nunc, eget volutpat massa. Cras in convallis libero. Etiam vitae diam mauris. Mauris ut ex felis. Vestibulum finibus velit massa, ut hendrerit enim euismod sit amet. Aenean scelerisque odio ut elementum commodo. Sed non efficitur orci. Fusce fermentum, dolor eget ornare viverra, ipsum risus venenatis tellus, nec finibus mi quam a arcu. Sed placerat ut dolor nec molestie. Duis vulputate dictum aliquam. Nullam ut augue vel nulla interdum pellentesque a at enim. Etiam id ornare dui, et egestas tellus. Ut pellentesque enim vel bibendum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vulputate facilisis mattis. Aenean accumsan, tellus molestie tincidunt consectetur, nibh nisl feugiat nisi, et faucibus ante nisi eu mauris. Vestibulum nisl mi, scelerisque a ultrices nec, vehicula eget libero. Quisque blandit dignissim augue a porttitor."</div>
+                                <div class='readmore'>
+                                    Read Review
+                                    <img src="resources/images/read.png">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,6 +169,27 @@
                 </div>
             </div>
         </footer>
+
+        <div class='screen' id='screen'></div>
+        <div class='subcat' id='subcat'>
+            <div class='header'>
+                <a onclick='closeModal()'>X</a>
+            </div>
+            <div class='step'>3</div>
+            <div class='question'>Which <span id='selectedCat'></span>  issue(s) apply to your case? </div>
+            <br><br><br>
+            <div class='checkgroup' id='checkgroup'>
+                <div><input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car</div>
+                <div><input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car</div>
+            </div>
+            <br><br><br>
+            <div class='button'>
+                <button>FIND A LAWYER NOW</button>
+            </div>
+        </div>
         <link rel="stylesheet" type="text/css" href="resources/base.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="resources/app.js"></script>
+        <script src="resources/data.json"></script>
     </body>
 </html>

@@ -72,7 +72,7 @@ header {
 }
 
 .body {
-    height : 569px;
+    height : 500px;
     margin-top : 100px;
     color : #FFFFFF;
 }
@@ -112,6 +112,20 @@ header {
     padding: 20px;
 }
 
+.input .drop-location{
+    display : none;
+    width: 88%;
+    background: white;
+    margin-left: 30px;
+    color: black;
+    border: 1px solid #CCC;
+    padding: 2px;
+}
+
+.drop-location .search {
+    color : blue;
+}
+
 .form .input input {
     width: 88%;
     height: 80%;
@@ -140,7 +154,7 @@ option[value=""][disabled] {
     text-align: center;
 }
 
-.inner-body .form .input .step {
+.step {
     width: 32px;
     height: 32px;
     background: #d68d00;
@@ -151,6 +165,7 @@ option[value=""][disabled] {
     font-weight: bold;
     font-size: 19px;
     line-height: 1.7;
+    float: left;
 }
 
 .inner-body .reviews{
@@ -168,8 +183,72 @@ option[value=""][disabled] {
 .reviews .review-list .item {
     width: 100%;
     height: 100px;
-    background: green;
     margin: 5px 0 0 5px;
+}
+
+.review-list .item .profile {
+    height: 100%;
+    width: 100px;
+    float : left;
+}
+
+.item .profile .image {
+    text-align: center;
+}
+
+.item .profile .name {
+    font-family: 'Gotham Medium';
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item .profile .location {
+    font-family: 'Gotham Medium';
+    font-size: 11px;
+    text-align: center;
+}
+
+.review-list .item .comment {
+
+}
+
+.item .comment .law {
+    float: left;
+    font-family: 'Gotham Medium';
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item .comment .stars {
+    margin-left: 20px;
+    float: left;
+}
+
+.item .comment .content {
+    height: 40px;
+    font-family: 'Gotham Book';
+    font-style: italic;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top : -10px;
+    line-height:120%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.item .comment .readmore {
+    float: right;
+    font-family: 'Gotham Book';
+    font-size: 10px;
+    color: #fbd243;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
 }
 
 footer {
@@ -243,4 +322,75 @@ footer {
 }
 .right {
     float : right;
+}
+
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+    display : none;
+}
+
+.subcat {
+    display : none;
+    position : fixed;
+    margin : 0 auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 599px;
+    height: 415px;
+    background : #FFFFFF;
+    z-index: 999999;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+}
+
+#subcat .header, #subcat .header a {
+    height: 48px;
+    text-align: right;
+    font-family: 'Gotham Book';
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#subcat .question {
+    font-family : 'Gotham Book';
+    font-size : 18px;
+    margin-left: 20px;
+    float: left;
+    line-height: 2;
+}
+
+#subcat .checkgroup div {
+    width : 50%;
+    float : left;
+}
+
+#subcat #selectedCat {
+    font-weight: bold;
+    font-family: 'Gotham Book';
+    font-size: 18px;
+}
+
+#subcat .button {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#subcat .button button {
+    background: #02377b;
+    border: transparent;
+    color: white;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 20px;
 }

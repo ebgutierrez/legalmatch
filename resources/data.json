@@ -1,0 +1,50 @@
+var zipcode = [{
+    "place" : "Nowheresville,XX",
+    "zipcode" : "00000"
+}]
+
+var category = [
+    {
+        "name" : "Family",
+        "value" : "family",
+        "subcategory" : [
+            {
+                "name" : "Adoption",
+                "value" : "adoption"
+            }, {
+                "name" : "Child support",
+                "value" : "childsupport"
+            }, {
+                "name" : "Guardianship",
+                "value" : "cuardianship"
+            }, {
+                "name" : "Paternity",
+                "value" : "paternity"
+            }
+        ]
+    }, {
+        "name" : "Criminal Defense",
+        "value" : "criminal-defense",
+        "subcategory" : [
+            {
+                "name" : "Child Custody",
+                "value" : "childcustody"
+            }, {
+                "name" : "Visitations",
+                "value" : "Visitations"
+            }
+        ]
+    }, {
+        "name" : "Business",
+        "value" : "business",
+        "subcategory" : [
+            {
+                "name" : "Divorce",
+                "value" : "divorce"
+            }, {
+                "name" : "Separations",
+                "value" : "separations"
+            }
+        ]
+    }
+];
