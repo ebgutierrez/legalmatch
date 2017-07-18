@@ -1,0 +1,246 @@
+@import 'fonts/fonts.css';
+
+* {
+    font-family: 'Gotham Light';
+    font-size : 14px;
+}
+
+body {
+    background: #032c69; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#032c69, #157ab8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#032c69, #157ab8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#032c69, #157ab8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#032c69, #157ab8);
+}
+
+.container {
+    margin : 0 auto;
+    /*padding : 0 170px 0 170px;*/
+}
+
+.outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 50px;
+    border: 0px solid transparent;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    border: transparent;
+}
+
+header {
+    position : absolute;
+    top : 0;
+    left : 0;
+    background : #FFFFFF;
+}
+
+.header {
+    height : 90px;
+}
+
+.header .header-logo img {
+    height : 50px;
+}
+
+.header .header-logo {
+    margin-top : 20px;
+}
+
+.header .header-logo .logo {
+    width : 287px;
+}
+
+.header .slogan {
+    margin-top: 24px;
+    font-family: 'Gotham';
+    color: #012666;
+    padding: 0 0 0 10px;
+}
+
+.header .service ul {
+    list-style-image: url('./images/check.png');
+}
+
+.body {
+    height : 569px;
+    margin-top : 100px;
+    color : #FFFFFF;
+}
+
+.body .inner-body {
+    padding : 10px 50px;
+}
+
+.inner-body .d1 {
+    font-family: 'Gotham Light';
+    font-size: 42px;
+}
+
+.inner-body .d2 {
+    font-family: 'Gotham Medium';
+    font-size: 30px;
+}
+
+.inner-body .form{
+    width : 50%;
+    float : left;
+    height : 50px;
+    margin-top : 45px;
+}
+
+.inner-body .form label {
+    font-family: 'Gotham Medium';
+    font-size : 18px;
+}
+
+.inner-body .form .input {
+    width: 85%;
+    height: 30px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.form .input input {
+    width: 88%;
+    height: 80%;
+    padding: 5px;
+    margin-top: -1px;
+    border: transparent;
+}
+
+.form .input select {
+    width: 88%;
+    height: 80%;
+    padding: 5px;
+    margin-top: 2px;
+    border: transparent;
+    background: transparent
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+.form .click-cat {
+    font-family: 'Gotham Book';
+    font-size : 18px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.inner-body .form .input .step {
+    width: 32px;
+    height: 32px;
+    background: #d68d00;
+    float: left;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.inner-body .reviews{
+    width: 48%;
+    float: right;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.reviews .title {
+    font-family: 'Gotham Book';
+    font-size: 20px;
+}
+
+.reviews .review-list .item {
+    width: 100%;
+    height: 100px;
+    background: green;
+    margin: 5px 0 0 5px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.footer {
+    /*height : 241px;*/
+    border : 1px solid #ccc;
+}
+
+.footer .inner-footer {
+    padding: 20px 50px 0 50px;
+}
+
+.inner-footer .logo {
+    width: 178px;
+    height : 31px;
+}
+
+.inner-footer .slogan {
+    font-family: 'Gotham';
+    font-size : 10px;
+    color: #012666;
+}
+
+.footer .footer-logo {
+    width : 20%;
+}
+
+.footer .footer-menu{
+    width : 60%;
+}
+
+.footer-menu .inner-menu {
+    width : 100%;
+    text-align : center;
+}
+
+.footer .accredit{
+    width : 20%;
+}
+
+.footer .inner-menu a {
+    text-decoration: none;
+}
+
+.footer .inner-menu.nav {
+    margin-top : 20px;
+}
+
+.footer .inner-menu.copyright {
+    margin-top : 50px;  
+}
+
+.footer .inner-menu, .footer .inner-menu a {
+    color: #929ba4;
+}
+
+.footer .accredit .logo{
+    width: 126px;
+    height: 45px;
+    margin-bottom : 20px;
+}
+
+.left {
+    float: left
+}
+.right {
+    float : right;
+}

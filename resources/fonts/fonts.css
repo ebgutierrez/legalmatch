@@ -1,0 +1,167 @@
+@font-face{
+    font-family: 'Gotham Black';
+    font-weight: normal;
+    font-style: normal;
+    src : url('./Gotham/Gotham-Black.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Black';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-BlackIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-style: normal;
+    src : url('./Gotham/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-style: italic;
+    src : url('./Gotham/Gotham-BoldIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Book';
+    font-weight: normal;
+    font-style: normal;
+    src : url('./Gotham/Gotham-Book.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Book';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-BookIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Light';
+    font-weight: normal;
+    font-style: normal;
+    src : url('./Gotham/Gotham-Light.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Light';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-LightIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Medium';
+    font-weight: normal;
+    font-style: normal;
+    src : url('./Gotham/Gotham-Medium.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Medium';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-MediumIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Thin';
+    font-weight: normal;
+    font-style: normal;
+    src : url('Gotham/Gotham-Thin.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Thin';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-ThinIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Ultra';
+    font-weight: normal;
+    font-style: normal;
+    src : url('./Gotham/Gotham-Ultra.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Ultra';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-UltraIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham XLight';
+    font-weight: normal;
+    font-style: normal;
+    src : url('./Gotham/Gotham-XLight.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham XLight';
+    font-weight: normal;
+    font-style: italic;
+    src : url('./Gotham/Gotham-XLightIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round';
+    font-weight: bold;
+    font-style: normal;
+    src : url('.//Gotham Rounded/GothamRnd-Bold.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round';
+    font-weight: bold;
+    font-style: italic;
+    src : url('.//Gotham Rounded/GothamRnd-BoldIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round Book';
+    font-weight: normal;
+    font-style: normal;
+    src : url('.//Gotham Rounded/GothamRnd-Book.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round Book';
+    font-weight: normal;
+    font-style: italic;
+    src : url('.//Gotham Rounded/GothamRnd-BookIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round Light';
+    font-weight: normal;
+    font-style: normal;
+    src : url('.//Gotham Rounded/GothamRnd-Light.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round Light';
+    font-weight: normal;
+    font-style: italic;
+    src : url('.//Gotham Rounded/GothamRnd-LightIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round Medium';
+    font-weight: normal;
+    font-style: italic;
+    src : url('.//Gotham Rounded/GothamRnd-MedIta.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Gotham Round Medium';
+    font-weight: normal;
+    font-style: normal;
+    src : url('.//Gotham Rounded/GothamRnd-Medium.otf') format('opentype');
+}
